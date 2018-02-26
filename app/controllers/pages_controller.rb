@@ -36,6 +36,11 @@ class PagesController < ApplicationController
       render :edit
     end
   end
+  #DELETE /pages/:id
+  def destroy
+    Page.find(params[:id]).destroy
+    redirect_to pages_path
+  end
 
   private
     def page_params

@@ -7,4 +7,5 @@
   <h2> <%= page.title %> </h2>
   <%= link_to 'Show Page', page_path(page.id) %>
   <%= link_to 'Edit', edit_page_path(page.id) %>
+  <%= link_to 'Delete', page_path(page.id), method: :delete %>
 <% end %>
